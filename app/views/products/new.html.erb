@@ -1,0 +1,48 @@
+<%
+=begin%>
+ <h1>New product</h1>
+
+<%= form_with model: @product do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+    <div>
+    <%= form.label :featured_image, style: "display: block" %>
+    <%= form.file_field :featured_image, accept: "image/*" %>
+    </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %> 
+<%
+=end%>
+<h1>New product</h1>
+
+<%= form_with model: @product, local: true do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :inventory_count %>
+    <%= form.number_field :inventory_count %>
+  </div>
+
+  <div>
+    <%= form.label :featured_image, style: "display: block" %>
+    <%= form.file_field :featured_image, accept: "image/*" %>
+  </div>
+
+  <div>
+    <%= form.submit "Create Product" %>
+  </div>
+<% end %>
