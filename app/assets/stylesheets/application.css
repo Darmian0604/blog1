@@ -1,6 +1,9 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1rem;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
   }
   
   nav {
@@ -38,3 +41,637 @@ body {
     max-width: 50%;
   }
   
+
+
+
+
+  /* Tiêu đề trang */
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 20px;
+  color: #4CAF50;
+}
+
+/* Vùng liên kết hành động */
+.actions {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.actions .btn {
+  text-decoration: none;
+  color: white;
+  background-color: #4CAF50;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.actions .btn:hover {
+  background-color: #45a049;
+}
+
+/* Danh sách sản phẩm */
+.product-list {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-item {
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.product-item:hover {
+  transform: scale(1.02);
+}
+
+.product-link {
+  color: #4CAF50;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.product-link:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Form tổng quát */
+.product-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Label */
+.form-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Text Input */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Textarea */
+.form-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.form-textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* File Input */
+.form-file-input {
+  font-size: 1rem;
+}
+
+/* Current Image */
+.current-image {
+  margin-top: 10px;
+}
+
+.current-image-tag {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Submit Button */
+.form-submit {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+  background-color: #45a049;
+}
+ 
+
+/* Thông báo flash */
+.alert-message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+/* Form đăng nhập */
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Nút submit */
+.form-submit {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+  background-color: #45a049;
+}
+
+/* Liên kết bổ sung */
+.extra-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.link-forgot, .link-signup {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.link-forgot:hover, .link-signup:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Tiêu đề trang */
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+/* Thông báo lỗi */
+.alert-message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Form cập nhật mật khẩu */
+.password-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Nhóm form */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Trường nhập liệu */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Nút gửi */
+.form-submit {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+  background-color: #45a049;
+
+
+  
+}
+/* Tiêu đề trang */
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+/* Thông báo lỗi */
+.alert-message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Form quên mật khẩu */
+.forgot-password-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Nhóm form */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Trường nhập liệu */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Nút gửi */
+.form-submit {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+  background-color: #45a049;
+}
+
+
+
+/* Tiêu đề trang */
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+/* Thông báo lỗi */
+.error-messages {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.error-messages ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.error-messages li {
+  font-size: 0.9rem;
+}
+
+/* Form đăng ký */
+.signup-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #333333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Nút submit */
+.form-submit {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+  background-color: #45a049;
+}
+
+
+/* Link quay lại */
+.back-link {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.back-link a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* Sản phẩm */
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.product-info {
+  padding: 10px;
+}
+
+.product-title {
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 1rem;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* Hành động sản phẩm */
+.product-actions {
+  margin-top: 20px;
+}
+
+.product-actions .button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.product-actions .edit-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.product-actions .edit-button:hover {
+  background-color: #45a049;
+}
+
+.product-actions .delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.product-actions .delete-button:hover {
+  background-color: #d32f2f;
+}
+
+
+
+/* Thông báo */
+.notification {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Thanh điều hướng */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-link {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.navbar-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Nội dung chính */
+.main-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+/* Chân trang */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-link {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+

@@ -15,17 +15,32 @@
     <link rel="apple-touch-icon" href="/icon.png">
 
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    
   </head>
 
   <body>
-  <div class="notice"><%= notice %></div>
-    <nav>
-      <%= link_to "Home", root_path %>
-      <%= button_to "Log out", session_path, method: :delete if authenticated? %>
-    </nav>
+  <div>
+    <%= notice %>
+  </div>
 
-    <main>
-      <%= yield %>
-    </main>
-  </body>
+  <nav class="navbar">
+    <%= link_to "Home", root_path, class: "navbar-link" %>
+    <%= button_to "Log out", session_path, method: :delete, class: "navbar-button" if authenticated? %>
+  </nav>
+
+  <main class="main-content">
+    <%= yield %>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; <%= Time.now.year %> Your Company. All rights reserved.</p>
+      <div class="footer-links">
+       
+      </div>
+    </div>
+  </footer>
+</body>
+
+
 </html>

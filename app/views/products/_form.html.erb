@@ -1,29 +1,32 @@
-<%= form_with model: product do |form| %>
-  <div>
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+<%= form_with model: product, html: { class: "product-form" } do |form| %>
+  <div class="form-group">
+    <%= form.label :name, class: "form-label" %>
+    <%= form.text_field :name, class: "form-input" %>
   </div>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.rich_text_area :description %>
+  <div class="form-group">
+    <%= form.label :description, class: "form-label" %>
+    <%= form.rich_text_area :description, class: "form-textarea" %>
   </div>
   
-  <div>
-    <%= form.label :inventory_count, style: "display: block" %>
-    <%= form.number_field :inventory_count %>
+  <div class="form-group">
+    <%= form.label :inventory_count, class: "form-label" %>
+    <%= form.number_field :inventory_count, class: "form-input" %>
   </div>
 
-  <div>
-    <%= form.label :featured_image, style: "display: block" %>
-    <%= form.file_field :featured_image, accept: "image/*" %>
+  <div class="form-group">
+    <%= form.label :featured_image, class: "form-label" %>
+    <%= form.file_field :featured_image, accept: "image/*", class: "form-file-input" %>
     <% if product.featured_image.attached? %>
-      <p>Current image:</p>
-      <%= image_tag product.featured_image %>
+      <div class="current-image">
+        <p>Current image:</p>
+        <%= image_tag product.featured_image, class: "current-image-tag" %>
+      </div>
     <% end %>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class="form-group">
+    <%= form.submit "Save Product", class: "form-submit" %>
   </div>
 <% end %>
+
